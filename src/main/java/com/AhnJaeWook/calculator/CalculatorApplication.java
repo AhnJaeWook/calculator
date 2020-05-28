@@ -3,6 +3,10 @@ package com.AhnJaeWook.calculator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * This is a bla bla
+ */
+
 @SpringBootApplication
 public class CalculatorApplication {
 
