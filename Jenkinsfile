@@ -1,14 +1,14 @@
 pipeline {
     agent any
     environment {
-	registry = "juht/calculator"
+	registry = "dingchi/calculator"
 	registryCredential="dockerhub"
 	dockerImage=''
     }
     stages {
         stage ('Check out'){
             steps {
-		git branch: 'uat', url: 'https://github.com/juht/calculator.git'
+		git branch: 'uat', url: 'https://github.com/AhnJaeWook/calculator.git'
             }
         }
         stage ('Compile') {
