@@ -54,14 +54,14 @@ pipeline {
 		}
 	    }
         }
-	stage('Push Image') {
-		steps {
-			script {
-				docker.withRegistry('',registryCredential) {
-					dockerImage.push()
-				}
-			}
-		}
-	}
+        stage('Push Image') {
+            steps {
+                script {
+                    docker.withRegistry('', registryCredential) {
+                        dockerImage.push()
+                    }
+                }
+            }
+        }
     }
 }
